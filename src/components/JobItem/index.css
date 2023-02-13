@@ -1,0 +1,171 @@
+.link {
+  text-decoration: none;
+}
+
+.jobitem {
+  list-style-type: none;
+  background-color: #202020;
+  border-radius: 20px;
+  padding: 5%;
+  margin-bottom: 20px;
+}
+
+.jobitem-logotitle-container {
+  display: flex;
+}
+
+.jobitem-companylogo {
+  width: 65px;
+  height: 65px;
+}
+
+.jobitem-namerating-container {
+  margin-left: 10px;
+}
+
+.jobitem-title {
+  color: #fafcfa;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.jobitem-rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.jobitem-star {
+  font-size: 20px;
+  color: #fbbf24;
+}
+
+.jobitem-rating {
+  color: #fafcfa;
+  margin-left: 6px;
+}
+
+.jobitem-locationtype-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #64748b;
+}
+
+.jobitem-location-container {
+  display: flex;
+  align-items: center;
+  color: #fafcfa;
+}
+
+.jobitem-location-img {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.jobitem-location {
+  margin-right: 15px;
+}
+
+.jobitem-package {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fafcfa;
+}
+
+.jobitem-descriptionheading {
+  color: #fafcfa;
+  font-size: 17px;
+}
+
+.jobitem-descriptionpara {
+  color: #fafcfa;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .jobitem {
+    list-style-type: none;
+    background-color: #202020;
+    border-radius: 20px;
+    padding: 5%;
+    margin-bottom: 20px;
+  }
+
+  .jobitem-logotitle-container {
+    display: flex;
+  }
+
+  .jobitem-companylogo {
+    width: 85px;
+    height: 85px;
+  }
+
+  .jobitem-namerating-container {
+    margin-left: 12px;
+  }
+
+  .jobitem-title {
+    color: #fafcfa;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .jobitem-rating-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .jobitem-star {
+    font-size: 22px;
+    color: #fbbf24;
+  }
+
+  .jobitem-rating {
+    color: #fafcfa;
+    margin-left: 6px;
+    font-size: 20px;
+  }
+
+  .jobitem-locationtype-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #64748b;
+  }
+
+  .jobitem-location-container {
+    display: flex;
+    align-items: center;
+    color: #fafcfa;
+  }
+
+  .jobitem-location-img {
+    margin-right: 7px;
+    font-size: 23px;
+  }
+
+  .jobitem-location {
+    margin-right: 18px;
+  }
+
+  .jobitem-package {
+    flex-grow: 1;
+    text-align: right;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fafcfa;
+  }
+
+  .jobitem-descriptionheading {
+    color: #fafcfa;
+    font-size: 19px;
+  }
+
+  .jobitem-descriptionpara {
+    color: #fafcfa;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+}

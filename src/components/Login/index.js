@@ -1,5 +1,7 @@
 import {Component} from 'react'
 
+import {Redirect} from 'react-router-dom'
+
 import Cookies from 'js-cookie'
 
 import './index.css'
@@ -14,7 +16,7 @@ class Login extends Component {
   submitForm = async event => {
     event.preventDefault()
 
-    const {username, password, errorMsg} = this.state
+    const {username, password} = this.state
 
     if (username.length === 0) {
       this.setState({errorMsg: 'Please Enter Username'})
@@ -52,6 +54,12 @@ class Login extends Component {
 
   render() {
     const {username, password, errorMsg} = this.state
+
+    const jwtToken = Cookies.get('jwt_token')
+
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
 
     return (
       <div className="login-page">
