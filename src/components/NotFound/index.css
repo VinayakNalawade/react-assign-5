@@ -1,0 +1,16 @@
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  color: #fcfafa;
+  background-color: #000000;
+}
+
+.not-found-img {
+  width: 60%;
+  max-width: 450px;
+}

@@ -266,8 +266,12 @@ class Jobs extends Component {
               <img
                 className="jobs-nojobsimg"
                 alt="no jobs"
-                src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
+                src="https://assets.ccbp.in/frontend/react-js/no-jobs-img.png"
               />
+              <h1 className="jobs-nojobsheading">No Jobs Found</h1>
+              <p className="jobs-nojobspara">
+                We could not find any jobs. Try other filters.
+              </p>
             </div>
           )
         }

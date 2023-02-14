@@ -18,15 +18,6 @@ class Login extends Component {
 
     const {username, password} = this.state
 
-    if (username.length === 0) {
-      this.setState({errorMsg: 'Please Enter Username'})
-      return
-    }
-    if (password.length === 0) {
-      this.setState({errorMsg: 'Please Enter Password'})
-      return
-    }
-
     const url = 'https://apis.ccbp.in/login'
 
     const userDetails = {username, password}
@@ -42,7 +33,7 @@ class Login extends Component {
 
     if (response.ok) {
       const jwtToken = data.jwt_token
-      Cookies.set('jwt_token', jwtToken)
+      Cookies.set('jwt_token', jwtToken, {expires: 2})
 
       const {history} = this.props
 
@@ -85,7 +76,7 @@ class Login extends Component {
           </label>
           <input
             id="password"
-            type="input"
+            type="password"
             className="login-input"
             value={password}
             onChange={this.changePassword}
